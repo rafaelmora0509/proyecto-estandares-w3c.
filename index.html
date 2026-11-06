@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    
-    <title>Prueba</title>
+    <title>Inicio - Proyecto Estándares W3C</title>
 </head>
 
 <body>
 
     <header>
-        <h1 align="center">Inicio</h1>
-        <p align="center">Bienvenidos a nuestra página web</p>
+        <!-- Se eliminaron los atributos obsoletos align="center" -->
+        <h1>Inicio</h1>
+        <p>Bienvenidos a nuestra página web</p>
     </header>
 
     <main class="contenedor">
@@ -23,16 +23,19 @@
             <p>García Zambrano Jostin Alexander</p>
             <p>Mora Alcívar Guillermo Rafael</p>
 
-            <img src="leo.jpg" alt="Logo de Messi">
+            <!-- Atributo alt descriptivo para WCAG 1.1.1 -->
+            <img src="leo.jpg" alt="Fotografía de Lionel Messi vistiendo la camiseta del FC Barcelona">
 
-            <a href="https://evirtual.utm.edu.ec/login/index.php">
-                Ir al Evirtual
+            <!-- Enlace con texto descriptivo -->
+            <a href="https://evirtual.utm.edu.ec/login/index.php" target="_blank" rel="noopener noreferrer">
+                Ir a la plataforma EVirtual UTM
             </a>
         </section>
 
         <div class="segunda-parte">
 
-            <nav class="menu">
+            <!-- Navegación con etiqueta ARIA para WCAG 1.3.1 -->
+            <nav class="menu" aria-label="Navegación principal">
                 <h2>Menú</h2>
 
                 <ul>
@@ -57,7 +60,10 @@
 
     </main>
 
-    
+    <footer>
+        <p>&copy; 2026 Proyecto Estándares W3C - Todos los derechos reservados.</p>
+    </footer>
+
     <script src="java.js"></script>
 </body>
 </html>
