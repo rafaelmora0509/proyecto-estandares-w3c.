@@ -24,6 +24,22 @@
     margin: 20px auto;
 }
 
+.bienvenida a {
+    color: #004085 !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 6px 12px;
+}
+
+.bienvenida a:hover,
+.bienvenida a:focus {
+    color: #002752 !important;
+    outline: 3px solid #004085;
+    border-radius: 4px;
+}
+
 .segunda-parte {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,6 +62,11 @@
     text-align: center;
 }
 
+.menu h2,
+.informacion h2 {
+    color: #ffffff;
+}
+
 .menu ul {
     list-style: none;
     padding: 0;
@@ -57,7 +78,7 @@
 }
 
 .menu a {
-    color: #ffffff;
+    color: #ffffff !important;
     font-weight: bold;
     font-size: 1.25rem;
     text-decoration: underline;
@@ -67,9 +88,9 @@
 
 .menu a:hover, 
 .menu a:focus {
-    color: #ffe600;
+    color: #ffe600 !important;
     outline: 3px solid #ffe600;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
 
@@ -116,7 +137,7 @@
 }
 
 .enlaces a {
-    color: #004085;
+    color: #004085 !important;
     font-weight: bold;
     text-decoration: underline;
     padding: 4px 8px;
@@ -124,6 +145,6 @@
 
 .enlaces a:hover,
 .enlaces a:focus {
-    color: #002752;
+    color: #002752 !important;
     outline: 2px solid #004085;
 }
