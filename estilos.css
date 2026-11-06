@@ -2,7 +2,7 @@
     max-width: 1100px;
     margin: 30px auto;
     padding: 30px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -16,60 +16,73 @@
     text-align: center;
 }
 
-.segunda-parte {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    background-color:white;
-}
-
-.menu,
-.informacion {
-    padding: 30px;
-    background-color: rgb(58, 153, 236);
-    border-radius: 20px;
-}
-
 .bienvenida img {
+    max-width: 100%;
     width: 300px;
+    height: auto;
     display: block;
     margin: 20px auto;
 }
 
-.menu {
+.segunda-parte {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .segunda-parte {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.menu, 
+.informacion {
+    padding: 30px;
+    background-color: #1a5b96;
+    color: #ffffff;
+    border-radius: 20px;
     text-align: center;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .menu li {
-    margin: 15px;
+    margin: 15px 0;
 }
 
 .menu a {
-    color: blue;
-    text-decoration: none;
-    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    padding: 4px 8px;
+    display: inline-block;
 }
 
-.menu a:hover {
-    color: cyan;
-}
-
-.informacion {
-    text-align: center;
+.menu a:hover, 
+.menu a:focus {
+    color: #ffe600;
+    outline: 3px solid #ffe600;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .informacion p {
-    font-size: 25px;
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
-    .horario {
+
+.horario {
     width: 90%;
     margin: 20px auto;
-    background-color: white;
+    background-color: #ffffff;
+    border-collapse: collapse;
 }
 
 .horario caption {
@@ -77,34 +90,40 @@
 }
 
 .horario caption h1 {
-    color: blue;
+    color: #004085;
 }
 
 .horario th,
 .horario td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #1a1a1a;
 }
 
 .horario thead th {
-    background-color: blue;
-    color: white;
+    background-color: #004085;
+    color: #ffffff;
 }
 
 .horario tbody th {
-    background-color: lightgray;
+    background-color: #e9ecef;
+    color: #1a1a1a;
 }
 
 .enlaces {
     text-align: center;
+    margin: 20px 0;
 }
 
 .enlaces a {
-    color: blue;
-    text-decoration: none;
+    color: #004085;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 4px 8px;
 }
 
-.enlaces a:hover {
-    text-decoration: underline;
+.enlaces a:hover,
+.enlaces a:focus {
+    color: #002752;
+    outline: 2px solid #004085;
 }
